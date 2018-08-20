@@ -1,0 +1,12 @@
+<view class='home-view'>
+    <swiper indicator-dots='{{indicatorDots}}' indicator-color='{{indicatorColor}}' indicator-active-color='{{indicatorActiveColor}}' interval='{{interval}}' circular='{{circular}}'  autoplay='{{autoplay}}'>
+        <swiper-item>111</swiper-item>
+        <swiper-item>222</swiper-item>
+        <swiper-item>333</swiper-item>
+        <swiper-item>444</swiper-item>
+        <swiper-item>555</swiper-item>
+    </swiper>
+    <view>
+
+    </view>
+</view>

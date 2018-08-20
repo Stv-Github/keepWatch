@@ -1,0 +1,47 @@
+{
+    "pages": [
+        "pages/home/home",
+        "pages/startPage/startPage",
+        
+        "pages/elderly/elderly",
+        "pages/children/children",
+        "pages/my/my"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#000",
+        "navigationBarTextStyle": "whilte"
+    },
+    "tabBar":{
+        "color":"#929292",
+        "selectedColor":"#D4237A",
+        "borderStyle":"white",
+        "backgroundColor":"#F8F8F8",
+        "list":[
+            {
+                "pagePath": "pages/home/home",
+                "text":"守望者",
+                "iconPath":"./images/icon/home.png",
+                "selectedIconPath":"images/icon/homeSelect.png"
+            },
+            {
+                "pagePath": "pages/elderly/elderly",
+                "text":"聆听老人",
+                "iconPath":"./images/icon/elderly.png",
+                "selectedIconPath":"images/icon/elderlySelect.png"
+            },
+            {
+                "pagePath": "pages/children/children",
+                "text":"关爱孩子",
+                "iconPath":"./images/icon/children.png",
+                "selectedIconPath":"images/icon/childrenSelect.png"
+            },
+            {
+                "pagePath": "pages/my/my",
+                "text": "我的",
+                "iconPath": "./images/icon/person.png",
+                "selectedIconPath": "images/icon/personSelect.png"
+            }
+        ]
+    }
+}
