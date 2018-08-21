@@ -10,7 +10,36 @@ Page({
         indicatorColor: '#FFF', //指示点颜色
         indicatorActiveColor: '#D4237A', //当前选中的指示点颜色
         indicatorDots: true, //是否显示面板指示点
-        interval: '3000',//滑动动画时长(毫秒)
+        interval: '3000', //滑动动画时长(毫秒)
+        imgArr: [{
+                src: '../../images/banner/1.jpg'
+            },
+            {
+                src: '../../images/banner/2.jpg'
+            },
+            {
+                src: '../../images/banner/3.jpg'
+            },
+            {
+                src: '../../images/banner/4.jpg'
+            },
+            {
+                src: '../../images/banner/5.jpg'
+            },
+            {
+                src: '../../images/banner/6.jpg'
+            }
+        ],
+        classifyArr: [
+            { titleText: '春', iconBgColor: '#DB72AB', iconSrc:'../../images/icon/icon.png'},
+            { titleText: '夏', iconBgColor: '#F55B64', iconSrc:'../../images/icon/icon.png'},
+            { titleText: '秋', iconBgColor: '#AA7DE3', iconSrc:'../../images/icon/icon.png'},
+            { titleText: '冬', iconBgColor: '#94DB88', iconSrc:'../../images/icon/icon.png'},
+            { titleText: '朝', iconBgColor: '#E6C573', iconSrc:'../../images/icon/icon.png'},
+            { titleText: '思', iconBgColor: '#62A160', iconSrc:'../../images/icon/icon.png'},
+            { titleText: '暮', iconBgColor: '#57B6D4', iconSrc:'../../images/icon/icon.png'},
+            { titleText: '想', iconBgColor: '#627EC4', iconSrc:'../../images/icon/icon.png'},
+        ]
     },
 
     /**

@@ -1,12 +1,107 @@
 <view class='home-view'>
-    <swiper indicator-dots='{{indicatorDots}}' indicator-color='{{indicatorColor}}' indicator-active-color='{{indicatorActiveColor}}' interval='{{interval}}' circular='{{circular}}'  autoplay='{{autoplay}}'>
-        <swiper-item>111</swiper-item>
-        <swiper-item>222</swiper-item>
-        <swiper-item>333</swiper-item>
-        <swiper-item>444</swiper-item>
-        <swiper-item>555</swiper-item>
+    <!-- 轮播图 -->
+    <swiper class='swiper-view' indicator-dots='{{indicatorDots}}' indicator-color='{{indicatorColor}}' indicator-active-color='{{indicatorActiveColor}}' interval='{{interval}}' circular='{{circular}}' autoplay='{{autoplay}}'>
+        <block wx:for='{{imgArr}}' wx:for-item="imgItem">
+            <swiper-item>
+                <image src='{{imgItem.src}}'></image>
+            </swiper-item>
+        </block>
     </swiper>
-    <view>
 
+    <!-- 分类 -->
+    <view class='classify-view'>
+        <block wx:for='{{classifyArr}}' wx:for-item='classifyItem'>
+            <view class='classifyItems'>
+                <view class='classifyicon' style='background-color:{{classifyItem.iconBgColor}}'>
+                    <image src='{{classifyItem.iconSrc}}'></image>
+                </view>
+                <text>{{classifyItem.titleText}}</text>
+            </view>
+        </block>
     </view>
+
+    <!-- 广播 -->
+    <view class='broadcast-view'>
+        <view class='broadcastIcon'>
+            <image src='../../images/icon/broadcast.png'></image>
+        </view>
+        <view class='broadcastContent'>
+            <text>Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing </text>
+            <image src='../../images/timg.jpg'></image>
+        </view>
+    </view>
+
+    <!-- 热门话题 -->
+    <view class='hotTopic-view'>
+        <view class='hotTopicTitle'>
+            <text>#热门话题#</text>
+            <text class='see'>查看全部 »</text>
+        </view>
+        <scroll-view class='hotTopicScroll' scroll-x>
+            <view>
+                <image src='../../images/1.jpg'></image>
+                <text>哈师大附近可拉伸的发生率的</text>
+            </view>
+            <view>
+                <image src='../../images/2.jpg'></image>
+                <text>哈师大附近可拉伸的发生率的哈师大附近可拉伸的发生率的</text>
+            </view>
+            <view>
+                <image src='../../images/3.jpg'></image>
+                <text>哈师大附近可拉伸的发生率的哈师大附</text>
+            </view>
+            <view>
+                <image src='../../images/4.jpg'></image>
+                <text>哈师大附近可拉伸的发生率的哈师大附发大发阿打</text>
+            </view>
+            <view>
+                <image src='../../images/5.jpg'></image>
+                <text>哈师大附近可拉伸的发生率的哈师大附近可拉伸的发生率的</text>
+            </view>
+        </scroll-view>
+    </view>
+
+    <!-- 全部话题 -->
+    <block wx:for='{{[1,2,3,4,5,6,7,8]}}'>
+        <view class='allTopics-view'>
+            <view class='allTopicsTitle'>
+                <view class='allTopicsUser'>
+                    <image class='avatar' src='../../images/icon/avatar.png'></image>
+                    <text>请加我Steven</text>
+                </view>
+                <text class='smallColor'>昨天09:41</text>
+            </view>
+            <view class='allTopicsMain'>
+                <view>
+                    <image src='../../images/5.jpg'></image>
+                    <view class='allTopicsContent'>
+                        <text class='userName'>Johnny AppleseedAppleseedAppleseedAppleseed  </text>
+                        <view class='smallColor'>哈师大附近可拉伸的发生率的哈师大附近可拉伸的发生率的哈师大附近可拉伸的发生率的哈师大附近可拉伸的发生率的哈师大附近可拉伸的发生率的哈师大附近可拉伸的发生率的</view>
+                    </view>
+                </view>
+                <view class='allTopicsFooter'>
+                    <view class='visualData'>
+                        <view>
+                            <image src='../../images/icon/watch.png'></image>
+                            <text>2.3k</text>
+                        </view>
+                        <view>
+                            <image src='../../images/icon/comment.png'></image>
+                            <text>1.3k</text>
+                        </view>
+                        <view>
+                            <image src='../../images/icon/collect.png'></image>
+                            <text>3573</text>
+                        </view>
+                    </view>
+                    <text>北京</text>
+                </view>
+            </view>
+
+        </view>
+    </block>
+
+
+
+    <view class='footer-view'></view>
 </view>
