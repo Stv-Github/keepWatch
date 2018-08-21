@@ -1,8 +1,9 @@
 {
     "pages": [
-        "pages/home/home",
-        "pages/startPage/startPage",
         
+        "pages/home/home",
+        "pages/home/hotTopicList/hotTopicList",
+        "pages/startPage/startPage",
         "pages/elderly/elderly",
         "pages/children/children",
         "pages/my/my"

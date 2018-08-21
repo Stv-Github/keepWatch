@@ -1,0 +1,49 @@
+<!-- 热门话题 -->
+<view>
+  <block wx:for="{{[1,1,1,1,1,1]}}">
+    <view class="page__bd">
+      <view class="weui-article">
+        <view class="weui-cell">
+          <view class="weui-cell__hd" style="position: relative;margin-right: 20rpx;">
+            <image src="" style="width: 100rpx; height: 100rpx; display: block" />
+          </view>
+          <view class="weui-cell__bd">
+            <view>请叫我Steven</view>
+            <view style="font-size: 30rpx;color: #888888;">昨天09:41</view>
+            <view class='move-view'>
+              <image src='../../../images/icon/move.png'></image>
+            </view>
+          </view>
+        </view>
+        <view class="weui-article__section">
+          <view class="weui-article__title">我是标题</view>
+          <view>
+            <view class="weui-article__p">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, consequat.
+            </view>
+            <view>
+              <image class="weui-article__img" src="../../../images/pic_article.png" mode="aspectFit" style="width:100%;height: 360rpx" />
+            </view>
+          </view>
+          <view class='allTopicsFooter'>
+            <view class='visualData'>
+              <view>
+                <image src='../../../images/icon/watch.png'></image>
+                <text>2.3k</text>
+              </view>
+              <view>
+                <image src='../../../images/icon/comment.png'></image>
+                <text>1.3k</text>
+              </view>
+              <view>
+                <image src='../../../images/icon/collect.png'></image>
+                <text>3573</text>
+              </view>
+            </view>
+            <text>北京</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
