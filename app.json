@@ -1,8 +1,10 @@
 {
     "pages": [
+        "pages/home/hotTopicList/hotTopicList",
         "pages/home/home",
-        "pages/startPage/startPage",
         
+
+        "pages/startPage/startPage",
         "pages/elderly/elderly",
         "pages/children/children",
         "pages/my/my"

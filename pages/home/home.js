@@ -42,6 +42,13 @@ Page({
         ]
     },
 
+    // 查看全部热门话题
+    GoHotTopicList: function(){
+        wx.navigateTo({
+            url: './hotTopicList/hotTopicList',
+        })
+    },
+
     /**
      * 生命周期函数--监听页面加载
      */

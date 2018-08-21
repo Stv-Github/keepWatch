@@ -35,7 +35,7 @@
     <view class='hotTopic-view'>
         <view class='hotTopicTitle'>
             <text>#热门话题#</text>
-            <text class='see'>查看全部 »</text>
+            <text class='see' bindtap='GoHotTopicList'>查看全部 »</text>
         </view>
         <scroll-view class='hotTopicScroll' scroll-x>
             <view>
