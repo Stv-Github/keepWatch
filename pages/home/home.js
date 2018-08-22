@@ -31,14 +31,14 @@ Page({
             }
         ],
         classifyArr: [
-            { titleText: '春', iconBgColor: '#DB72AB', iconSrc:'../../images/icon/icon.png'},
-            { titleText: '夏', iconBgColor: '#F55B64', iconSrc:'../../images/icon/icon.png'},
-            { titleText: '秋', iconBgColor: '#AA7DE3', iconSrc:'../../images/icon/icon.png'},
-            { titleText: '冬', iconBgColor: '#94DB88', iconSrc:'../../images/icon/icon.png'},
-            { titleText: '朝', iconBgColor: '#E6C573', iconSrc:'../../images/icon/icon.png'},
-            { titleText: '思', iconBgColor: '#62A160', iconSrc:'../../images/icon/icon.png'},
-            { titleText: '暮', iconBgColor: '#57B6D4', iconSrc:'../../images/icon/icon.png'},
-            { titleText: '想', iconBgColor: '#627EC4', iconSrc:'../../images/icon/icon.png'},
+            { titleText: '最初', iconBgColor: '#DB72AB', iconSrc:'../../images/icon/icon.png'},
+            { titleText: '成长', iconBgColor: '#F55B64', iconSrc:'../../images/icon/icon.png'},
+            { titleText: '燃火', iconBgColor: '#AA7DE3', iconSrc:'../../images/icon/icon.png'},
+            { titleText: '离歌', iconBgColor: '#94DB88', iconSrc:'../../images/icon/icon.png'},
+            { titleText: '相守', iconBgColor: '#E6C573', iconSrc:'../../images/icon/icon.png'},
+            { titleText: '前行', iconBgColor: '#62A160', iconSrc:'../../images/icon/icon.png'},
+            { titleText: '渴盼', iconBgColor: '#57B6D4', iconSrc:'../../images/icon/icon.png'},
+            { titleText: '陪伴', iconBgColor: '#627EC4', iconSrc:'../../images/icon/icon.png'},
         ]
     },
 
