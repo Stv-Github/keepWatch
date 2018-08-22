@@ -1,17 +1,28 @@
-// pages/home/hotTopicList/hotTopicList.js
+// pages/home/topicDetails/topicDetails.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-
+        item: {
+            followState: true,//关注状态
+            collectionState: true//收藏状态
+        },
+        isShow: true,//评论是否显示
+        currentTab: 0,
     },
 
-    // 话题详情
-    GoTopicDetails:function(){
-        wx.navigateTo({
-            url: '../topicDetails/topicDetails'
+    // 关注收藏状态
+    allState: function(){
+        this.setData({
+            'item.followState': false
+        })
+    },
+    // 评论、转发、点赞 切换
+    swichNav: function(e){
+        this.setData({
+            currentTab: e.target.dataset.current
         })
     },
 

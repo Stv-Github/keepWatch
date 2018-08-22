@@ -198,7 +198,3 @@
     color:#8F8E94;
     font-size:24rpx;
 }
-
-.footer-view{
-    height: 100rpx;
-}

@@ -1,11 +1,14 @@
 {
     "pages": [
-        "pages/home/hotTopicList/hotTopicList",
+        "pages/home/topicDetails/topicDetails",
         "pages/home/home",
+        "pages/home/hotTopicList/hotTopicList",
+        
         "pages/startPage/startPage",
         "pages/elderly/elderly",
         "pages/children/children",
-        "pages/my/my"
+        "pages/my/my",
+        "pages/template/template"
     ],
     "window": {
         "backgroundTextStyle": "light",

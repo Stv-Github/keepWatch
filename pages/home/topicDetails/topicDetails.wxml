@@ -1,0 +1,92 @@
+<!-- 话题详情 -->
+<import src='../../template/template' />
+<view>
+    <template is='detailsTem' data='{{...item}}'></template>
+
+    <!-- 评论、转发、点赞 -->
+    <view class='comment-view'>
+        <view class='comHeader-view'>
+            <view>
+                <text style='margin-right: 30rpx;' class="{{currentTab == 0 ? 'tabActive' : ''}}" data-current='0' bindtap='swichNav'>评论 2.4k</text>
+                <text class="{{currentTab == 1 ? 'tabActive' : ''}}" data-current='1' bindtap='swichNav'>转发 6</text>
+            </view>
+            <text class="{{currentTab == 2 ? 'tabActive' : ''}}" data-current='2' bindtap='swichNav'>赞 358</text>
+        </view>
+
+        <!-- 评论 -->
+
+        <!-- <view hidden='{{currentTab == 0}}'> -->
+        <view style="display: {{currentTab == 0 ? 'block' : 'none'}}">
+            <block wx:for='{{[1,1,1,1,1,1]}}'>
+                <view class='comment_item'>
+                    <view class="weui-cell" style='border-bottom: 0;'>
+                        <view class="weui-cell__hd" style="position: relative;margin-right: 20rpx;">
+                            <image src="" />
+                        </view>
+                        <view class="weui-cell__bd">
+                            <view>请叫我Steven</view>
+                            <view style="font-size: 24rpx;color: #888888;">昨天09:41</view>
+
+                        </view>
+                    </view>
+                    <!-- 评论内容 -->
+                    <view class='param_content'>
+                        <view class='param_main'>
+                            如果你无法简洁的表达你的想法，那只说明你还不够了解它。 -- 阿尔伯特·爱因斯坦
+                        </view>
+                        <!-- 回复区域 -->
+                        <view class='recovery_area'>
+                            <view class='reply_item' space='ensp'>
+                                <text class='user_name'>Like</text> 回复
+                                <text class='user_name'>请叫我Steven</text> :
+                                <text> \n</text> 如果你无法简洁的表达你的想法，那只说明你还不够了解它。 -- 阿尔伯特·爱因斯坦
+                            </view>
+                            <view class='reply_item' space='ensp'>
+                                <text class='user_name'>请叫我Steven</text> 回复
+                                <text class='user_name'>Like</text> :
+                                <text> \n</text> 如果你无法简洁的表达你的想法，那只说明你还不够了解它。 -- 阿尔伯特·爱因斯坦
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </block>
+        </view>
+        <!-- 转发 -->
+        <view style="display: {{currentTab == 1 ? 'block' : 'none'}}">
+            <block wx:for='{{[1,1,1,1,1,1]}}'>
+                <view class="weui-cell forwarded_item" style='border-bottom: 0;'>
+                    <view class="weui-cell__hd" style="position: relative;margin-right: 20rpx;">
+                        <image src=""  />
+                    </view>
+                    <view class="weui-cell__bd">
+                        <view>请叫我Steven</view>
+                        <view style="font-size: 24rpx;color: #888888;">暂无介绍</view>
+                        <view class='abulous-view'>
+                            <image src='../../../images/icon/abulous.png'></image>
+                        </view>
+                    </view>
+                </view>
+            </block>
+        </view>
+
+        <!-- 点赞 -->
+        <view style="display: {{currentTab == 2 ? 'block' : 'none'}}">
+            <block wx:for='{{[1,1,1,1,1,1]}}'>
+                <view class="weui-cell forwarded_item" style='border-bottom: 0;'>
+                    <view class="weui-cell__hd" style="position: relative;margin-right: 20rpx;">
+                        <image src=""  />
+                    </view>
+                    <view class="weui-cell__bd">
+                        <view>请叫我Steven</view>
+                        <view style="font-size: 24rpx;color: #888888;">暂无介绍</view>
+                        <view class='abulous-view'>
+                            <image src='../../../images/icon/abulous.png'></image>
+                        </view>
+                    </view>
+                </view>
+            </block>
+        </view>
+    </view>
+</view>
+
+<view class='footer-view'></view>
