@@ -1,12 +1,12 @@
 {
     "pages": [
-        
+        "pages/home/topicDetails/topicDetails",
         "pages/home/home",
         "pages/home/hotTopicList/hotTopicList",
-        "pages/home/topicDetails/topicDetails",
-        "pages/startPage/startPage",
+        
         "pages/elderly/elderly",
         "pages/children/children",
+        "pages/startPage/startPage",
         "pages/my/my",
         "pages/template/template"
     ],

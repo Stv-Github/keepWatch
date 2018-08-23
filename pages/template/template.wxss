@@ -1,23 +1,10 @@
 .weui-article {
-    padding: 0;
+    padding: 0rpx;
     border-top: 20rpx solid #f5f5f5;
 }
 
-.weui-cell {
-    border-bottom: 1px solid #eee;
-    padding: 15rpx 30rpx;
-}
-
-.weui-cell .weui-cell__hd image {
-    width: 100rpx; 
-    height: 100rpx;
-    background: #f5f5f5;
-    border-radius: 100%;
-    border: 2rpx solid #D9D9D9;
-}
-
 .weui-article__section {
-    padding: 30rpx;
+    padding: 0rpx 20rpx 20rpx;
     margin: 0;
 }
 .weui-article__title{
@@ -50,8 +37,8 @@
 /* 详情关注与收藏 */
 .aboutHim {
     position: absolute;
-    top: 0;
-    right: 10rpx;
+    top: 8rpx;
+    right: 0rpx;
     z-index: 10;
 }
 .aboutHim image{

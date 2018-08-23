@@ -11,6 +11,8 @@ Page({
         },
         isShow: true,//评论是否显示
         currentTab: 0,
+        txtHeight:55,
+        txtPadding:10
     },
 
     // 关注收藏状态
@@ -23,6 +25,34 @@ Page({
     swichNav: function(e){
         this.setData({
             currentTab: e.target.dataset.current
+        })
+        if (e.target.dataset.current == '0'){
+            this.setData({
+                sliderOffset: 30
+            })
+        } else if (e.target.dataset.current == '1'){
+            this.setData({
+                sliderOffset: 170
+            })
+        }else{
+            this.setData({
+                sliderOffset: 640
+            })
+        }
+    },
+    // 获取textarea焦点
+    bindfocus:function(e){
+        console.log(e)
+        this.setData({
+            // txtHeight: 150,
+            // txtPadding: 20
+        })
+    },
+    // 失去textarea焦点
+    bindblur:function(e){
+        this.setData({
+            // txtHeight: 55,
+            // txtPadding: 10
         })
     },
 

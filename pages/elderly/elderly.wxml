@@ -1,2 +1,13 @@
-<!--pages/elderly/elderly.wxml-->
-<text>pages/elderly/elderly.wxml</text>
+
+<!-- <view class="user_information">
+    <view class="user_cell_hd">
+        <image src="" />
+    </view>
+    <view class="user_cell_bd">
+        <view>请叫我Steven</view>
+        <view class="user_cell_time">昨天09:41</view>
+        <view class='user_cell_icon'>
+            <image src='../../../images/icon/move.png'></image>
+        </view>
+    </view>
+</view> -->

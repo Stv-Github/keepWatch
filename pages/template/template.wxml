@@ -2,14 +2,14 @@
 <template name='hotTopItemTem'>
     <view class="page__bd" bindtap='GoTopicDetails'>
         <view class="weui-article">
-            <view class="weui-cell">
-                <view class="weui-cell__hd" style="position: relative;margin-right: 20rpx;">
-                    <image src=""  />
+            <view class="user_information">
+                <view class="user_cell_hd">
+                    <image src="../../../images/icon/portrait1.png" />
                 </view>
-                <view class="weui-cell__bd">
+                <view class="user_cell_bd">
                     <view>请叫我Steven</view>
-                    <view style="font-size: 24rpx;color: #888888;">昨天09:41</view>
-                    <view class='move-view'>
+                    <view class="user_cell_time">昨天09:41</view>
+                    <view class='user_cell_icon'>
                         <image src='../../../images/icon/move.png'></image>
                     </view>
                 </view>
@@ -50,28 +50,30 @@
 <template name='detailsTem'>
     <view class="page__bd" style='border-bottom: 20rpx solid #f5f5f5;'>
         <view class="weui-article">
-            <view class="weui-cell">
-                <view class="weui-cell__hd" style="position: relative;margin-right: 20rpx;">
-                    <image src="" />
+            <view class="user_information user_info_border">
+                <view class="user_cell_hd">
+                    <image src="../../../images/icon/portrait1.png" />
                 </view>
-                <view class="weui-cell__bd">
+                <view class="user_cell_bd">
                     <view>请叫我Steven</view>
-                    <view style="font-size: 24rpx;color: #888888;">昨天09:41</view>
-
+                    <view class="user_cell_time">昨天09:41</view>
+                    <!-- <image src='../../../images/icon/move.png'></image> -->
                     <!-- 关注状态和收藏 -->
                     <view class='aboutHim'>
                         <!-- <block wx:if="{{State == true}}"> -->
-                            <!-- 关注 -->
-                            <block wx:if="{{followState == true}}">
-                                <view class='follow' bindtap='allState'>
-                                    <image src='../../../images/icon/plus.png' /><text>关注</text>
-                                </view>
-                            </block>
-                            <block wx:else>
-                                <view class='onFollow'>
-                                    <image src='../../../images/icon/choice.png' /><text>已关注</text>
-                                </view>
-                            </block>
+                        <!-- 关注 -->
+                        <block wx:if="{{followState == true}}">
+                            <view class='follow' bindtap='allState'>
+                                <image src='../../../images/icon/plus.png' />
+                                <text>关注</text>
+                            </view>
+                        </block>
+                        <block wx:else>
+                            <view class='onFollow'>
+                                <image src='../../../images/icon/choice.png' />
+                                <text>已关注</text>
+                            </view>
+                        </block>
                         <!-- </block> -->
 
                         <!-- 收藏 -->
@@ -87,7 +89,7 @@
                                 </view>
                             </block>
                         </block> -->
-                        
+
                     </view>
                 </view>
             </view>

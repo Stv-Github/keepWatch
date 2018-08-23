@@ -8,6 +8,12 @@
     padding: 0rpx 20rpx;
     border-bottom: 1rpx solid #ccc;
     box-sizing: border-box;
+    position: relative;
+}
+.weui-navbar__slider{
+    width: 50rpx;
+    height: 5rpx;
+    background: #E07B17;
 }
 .comHeader-view text{
     color: #666;
@@ -17,7 +23,8 @@
     color: #010101;
 }
 .param_content{
-    margin: 0rpx 20rpx 0rpx 150rpx;
+    margin-left: 140rpx;
+    margin-right: 20rpx;
     border-bottom: 1rpx solid #D9D9D9;
 }
 .param_main{
@@ -37,14 +44,31 @@
 .reply_item text{
     color: #09554E;
 }
+.user_icon{
+    top: 30rpx;
+}
+.user_icon image{
+    width: 35rpx;
+    height: 35rpx;
+}
+.user_icon .pinglun{
+    margin-top: 5rpx;
+}
+.user_icon text{
+    font-size: 24rpx;
+    color: #979797;
+}
 /* 转发、点赞 */
+.forwarded_item{
+    position: relative;
+}
 .forwarded_item:after{
     content: " ";
     position: absolute;
-    width:570rpx;
+    width:590rpx;
     right: 0;
-    bottom: 0;
-    left:150rpx;
+    bottom: 10rpx;
+    left:140rpx;
     border-top: 1rpx solid #D9D9D9;
 }
 .forwarded_item:active{
@@ -52,14 +76,48 @@
 }
 .abulous-view{
     position:absolute;
-    top:50%;
+    top:10%;
     right:10rpx;
     width:45rpx;
     height:45rpx;
     z-index:10;
-    margin-top:-22.5rpx;
 }
 .abulous-view image {
     width: 100%;
     height: 100%;
+}
+
+/* 发表评论 */
+.publish_view{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #ff0;
+    /* padding: 10rpx 20rpx 0rpx; */
+    padding: 10rpx 20rpx;
+    border-top: 1rpx solid #eee;
+    z-index: 10;
+    box-sizing: border-box;
+}
+.publish_view > view{
+    display: flex;
+    align-items: center;
+}
+.publish_view textarea{
+    display: block;
+    width: 400rpx;
+    padding: 10rpx 20rpx;
+    border-radius: 10rpx;
+    background: #f5f5f5;
+    margin-right: 20rpx;
+}
+.publish_icon{
+    display: flex;
+    align-items: center;
+}
+.publish_icon image{
+    width: 50rpx;
+    height: 50rpx;
+    margin-left: 20rpx;
 }
