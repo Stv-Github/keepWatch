@@ -1,2 +1,21 @@
-<!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+<view class='person_view'>
+    <view class='per_header'>
+        <view class='per_img'>
+            <image src='../../images/icon/portrait1.png' />
+        </view>
+        <view>请叫我Steven</view>
+        <view class='per_headerText'>0 关注 | 100 粉丝</view>
+        <view class='per_headerText'>简介：暂无简介</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-grids">
+            <block wx:for="{{grids}}" wx:key="*this">
+                <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="../images/icon_tabbar.png" />
+                    <view class="weui-grid__label">Grid</view>
+                </navigator>
+            </block>
+        </view>
+    </view>
+    <view></view>
+</view>

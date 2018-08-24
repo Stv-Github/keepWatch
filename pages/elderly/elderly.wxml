@@ -1,4 +1,3 @@
-
 <!-- <view class="user_information">
     <view class="user_cell_hd">
         <image src="" />
@@ -11,3 +10,40 @@
         </view>
     </view>
 </view> -->
+<block wx:for='{{[1,2,3,4,5,6,7,8]}}'>
+    <view class='allTopics-view' bindtap='GoTopicDetails'>
+        <view class='allTopicsTitle'>
+            <view class='allTopicsUser'>
+                <image class='avatar' src='../../images/icon/avatar.png'></image>
+                <text>请加我Steven</text>
+            </view>
+            <text class='smallColor'>昨天09:41</text>
+        </view>
+        <view class='allTopicsMain'>
+            <view>
+                <view class='allTopicsContent'>
+                    <text class='userName'>Johnny AppleseedAppleseedAppleseedAppleseed  </text>
+                    <view class='smallColor'>哈师大附近可拉伸的发生率的哈师大附近可拉伸的发生率的哈师大附近可拉伸的发生率的哈师大附近可拉伸的发生率的哈师大附近可拉伸的发生率的哈师大附近可拉伸的发生率的</view>
+                </view>
+                <image src='../../images/5.jpg'></image>
+            </view>
+            <view class='allTopicsFooter'>
+                <view class='visualData'>
+                    <view>
+                        <image src='../../images/icon/watch.png'></image>
+                        <text>2.3k</text>
+                    </view>
+                    <view>
+                        <image src='../../images/icon/comment.png'></image>
+                        <text>1.3k</text>
+                    </view>
+                    <view>
+                        <image src='../../images/icon/collect.png'></image>
+                        <text>3573</text>
+                    </view>
+                </view>
+                <text>北京</text>
+            </view>
+        </view>
+    </view>
+</block>

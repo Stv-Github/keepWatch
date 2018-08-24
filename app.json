@@ -1,13 +1,13 @@
 {
     "pages": [
-        "pages/home/topicDetails/topicDetails",
+        "pages/my/my",
         "pages/home/home",
         "pages/home/hotTopicList/hotTopicList",
-        
+        "pages/home/topicDetails/topicDetails",
         "pages/elderly/elderly",
         "pages/children/children",
         "pages/startPage/startPage",
-        "pages/my/my",
+        
         "pages/template/template"
     ],
     "window": {

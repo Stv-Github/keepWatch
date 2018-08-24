@@ -93,7 +93,7 @@
     <view class='publish_view'>
         <!-- <view style='margin-bottom:{{txtViewHeight}}rpx;'> -->
         <view>
-            <textarea placeholder='说点什么...' fixed='true' bindfocus='bindfocus' bindblur='bindblur' style='height: {{txtHeight}}rpx;padding:{{txtPadding}}rpx 20rpx; ' cursor-spacing='80' ></textarea>
+            <textarea placeholder='说点什么...' fixed='true' auto-height='true' bindfocus='bindfocus' bindblur='bindblur' cursor-spacing='80' ></textarea>
             <view class='publish_icon'>
                 <image src='../../../images/icon/fenxiang.png'></image>
                 <image src='../../../images/icon/zan2.png'></image>

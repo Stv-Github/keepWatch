@@ -11,7 +11,6 @@ Page({
         },
         isShow: true,//评论是否显示
         currentTab: 0,
-        txtHeight:55,
         txtPadding:10
     },
 
@@ -44,14 +43,12 @@ Page({
     bindfocus:function(e){
         console.log(e)
         this.setData({
-            // txtHeight: 150,
             // txtPadding: 20
         })
     },
     // 失去textarea焦点
     bindblur:function(e){
         this.setData({
-            // txtHeight: 55,
             // txtPadding: 10
         })
     },

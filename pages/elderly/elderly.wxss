@@ -1,1 +1,3 @@
-/* pages/elderly/elderly.wxss */
+.allTopicsContent{
+    margin-left: 0;
+}

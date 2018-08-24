@@ -93,24 +93,26 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background: #ff0;
-    /* padding: 10rpx 20rpx 0rpx; */
-    padding: 10rpx 20rpx;
+    background: #fff;
+    padding: 10rpx 40rpx 10rpx 20rpx;
     border-top: 1rpx solid #eee;
     z-index: 10;
     box-sizing: border-box;
 }
 .publish_view > view{
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 .publish_view textarea{
     display: block;
     width: 400rpx;
-    padding: 10rpx 20rpx;
+    height: 40rpx;
+    max-height: 150rpx;
+    padding: 5rpx;
     border-radius: 10rpx;
     background: #f5f5f5;
-    margin-right: 20rpx;
+    /* margin-right: 30rpx; */
 }
 .publish_icon{
     display: flex;
@@ -119,5 +121,5 @@
 .publish_icon image{
     width: 50rpx;
     height: 50rpx;
-    margin-left: 20rpx;
+    margin-left: 25rpx;
 }

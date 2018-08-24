@@ -7,9 +7,6 @@
     width: 100%;
     height: 100%;
 }
-.broadcast-view, .hotTopic-view, .allTopics-view{
-    border-bottom: 20rpx solid #f5f5f5;
-}
 
 /* 分类 */
 .classify-view{
@@ -118,83 +115,4 @@
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     opacity: .8;
-}
-/* 所有话题 */
-.allTopicsTitle{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20rpx;
-    height: 80rpx;
-    border-bottom:1rpx dashed #999;
-}
-.allTopicsUser{
-    display: flex;
-    align-items: center;
-}
-.avatar{
-    width: 50rpx;
-    height: 50rpx;
-    margin-right: 10rpx;
-}
-.smallColor{
-    color: #8F8E94;
-    font-size: 24rpx;
-}
-.allTopicsMain{
-    padding: 20rpx;
-}
-.allTopicsMain > view{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.allTopicsMain image{
-    width: 220rpx;
-    height: 147rpx;
-}
-.allTopicsContent{
-    width: 440rpx;
-    height: 147rpx;
-    margin-left: 50rpx;
-    overflow: hidden;
-}
-.userName{
-    width: 100%;
-    display: block;
-    font-size: 32rpx;
-    font-weight: bold;
-    overflow: hidden;
-    text-overflow:ellipsis;
-    white-space: nowrap;
-}
-.allTopicsContent .smallColor{
-    width: 100%;
-    display: -webkit-box;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    margin-top: 10rpx;
-    line-height: 40rpx;
-}
-.allTopicsFooter{
-    margin-top: 20rpx;
-}
-.visualData{
-    display: flex;
-}
-.visualData > view{
-    display: flex;
-    align-items: center;
-    margin-right: 15rpx;
-}
-.visualData image{
-    width: 35rpx;
-    height: 35rpx;
-    margin-right: 5rpx;
-}
-.allTopicsFooter text{
-    color:#8F8E94;
-    font-size:24rpx;
 }
