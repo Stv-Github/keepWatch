@@ -21,7 +21,7 @@
     </view>
 
     <!-- 广播 -->
-    <view class='broadcast-view'>
+    <view class='broadcast-view borderBottom'>
         <view class='broadcastIcon'>
             <image src='../../images/icon/broadcast.png'></image>
         </view>
@@ -32,7 +32,7 @@
     </view>
 
     <!-- 热门话题 -->
-    <view class='hotTopic-view'>
+    <view class='hotTopic-view borderBottom'>
         <view class='hotTopicTitle'>
             <text>#热门话题#</text>
             <text class='see' bindtap='GoHotTopicList'>查看全部 »</text>
@@ -63,7 +63,7 @@
 
     <!-- 全部话题 -->
     <block wx:for='{{[1,2,3,4,5,6,7,8]}}'>
-        <view class='allTopics-view'>
+        <view class='allTopics-view borderBottom'>
             <view class='allTopicsTitle'>
                 <view class='allTopicsUser'>
                     <image class='avatar' src='../../images/icon/avatar.png'></image>

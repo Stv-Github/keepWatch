@@ -1,13 +1,18 @@
 {
     "pages": [
-        "pages/my/my",
+        
         "pages/home/home",
         "pages/home/hotTopicList/hotTopicList",
         "pages/home/topicDetails/topicDetails",
         "pages/elderly/elderly",
         "pages/children/children",
         "pages/startPage/startPage",
-        
+        "pages/my/my",
+        "pages/my/invite/invite",
+        "pages/my/problem/problem",
+        "pages/my/feedback/feedback",
+        "pages/my/aboutUs/aboutUs",
+        "pages/my/setUp/setUp",
         "pages/template/template"
     ],
     "window": {
@@ -16,7 +21,7 @@
         "navigationBarTextStyle": "whilte"
     },
     "tabBar":{
-        "color":"#929292",
+        "color":"#444",
         "selectedColor":"#D4237A",
         "borderStyle":"white",
         "backgroundColor":"#F8F8F8",
@@ -24,26 +29,26 @@
             {
                 "pagePath": "pages/home/home",
                 "text":"守望者",
-                "iconPath":"./images/icon/home.png",
-                "selectedIconPath":"images/icon/homeSelect.png"
+                "iconPath":"./images/icon/t-home.png",
+                "selectedIconPath":"images/icon/t-homeSelect.png"
             },
             {
                 "pagePath": "pages/elderly/elderly",
                 "text":"聆听老人",
-                "iconPath":"./images/icon/elderly.png",
-                "selectedIconPath":"images/icon/elderlySelect.png"
+                "iconPath":"./images/icon/t-elderly.png",
+                "selectedIconPath":"images/icon/t-elderlySelect.png"
             },
             {
                 "pagePath": "pages/children/children",
                 "text":"关爱孩子",
-                "iconPath":"./images/icon/children.png",
-                "selectedIconPath":"images/icon/childrenSelect.png"
+                "iconPath":"./images/icon/t-children.png",
+                "selectedIconPath":"images/icon/t-childrenSelect.png"
             },
             {
                 "pagePath": "pages/my/my",
                 "text": "我的",
-                "iconPath": "./images/icon/person.png",
-                "selectedIconPath": "images/icon/personSelect.png"
+                "iconPath": "./images/icon/t-person.png",
+                "selectedIconPath": "images/icon/t-personSelect.png"
             }
         ]
     }
