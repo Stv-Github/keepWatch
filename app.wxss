@@ -15,6 +15,19 @@ page{
 .user_information{
     display: flex;
     padding: 15rpx 20rpx;
+    position: relative;
+}
+.forwarded_item:after{
+    content: " ";
+    position: absolute;
+    width:590rpx;
+    right: 0;
+    bottom: 10rpx;
+    left:140rpx;
+    border-top: 1rpx solid #D9D9D9;
+}
+.forwarded_item:active{
+    background: #f2f2f2;
 }
 .user_cell_hd{
     width: 100rpx;

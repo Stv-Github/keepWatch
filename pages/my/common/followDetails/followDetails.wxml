@@ -1,0 +1,70 @@
+<view class='followDetails_view'>
+    <view class='followTabs'>
+        <text data-current='0' bindtap='tabCurrent'>关注（100）</text>
+        <text data-current='1' bindtap='tabCurrent'>粉丝（1257）</text>
+        <view class='interval' style='transform: translateX({{intervalLeft}}%);'></view>
+    </view>
+
+    <swiper bindchange='durationChange' current='{{current}}'>
+        <swiper-item>
+            <view>
+                <block wx:for='{{[1,1,1,1,1,1]}}'>
+                    <view class="user_information forwarded_item" bindtap='GoUserHomePage'>
+                        <view class="user_cell_hd">
+                            <image src="../../../../images/icon/portrait1.png" />
+                        </view>
+                        <view class="user_cell_bd">
+                            <view>请叫我Steven</view>
+                            <view class="user_cell_time">暂无简介</view>
+                            <!-- 关注-->
+                            <view class='aboutHim'>
+                                <block wx:if="{{followState == true}}">
+                                    <view class='follow' data-index='{{index}}' catchtap='allState'>
+                                        <image src='../../../../images/icon/plus.png' />
+                                        <text>关注</text>
+                                    </view>
+                                </block>
+                                <block wx:else>
+                                    <view class='onFollow'>
+                                        <image src='../../../../images/icon/choice.png' />
+                                        <text>已关注</text>
+                                    </view>
+                                </block>
+                            </view>
+                        </view>
+                    </view>
+                </block>
+            </view>
+        </swiper-item>
+        <swiper-item>
+            <view>
+                <block wx:for='{{[1,1,1,1,1,1]}}'>
+                    <view class="user_information forwarded_item" bindtap='GoUserHomePage'>
+                        <view class="user_cell_hd">
+                            <image src="../../../../images/icon/portrait1.png" />
+                        </view>
+                        <view class="user_cell_bd">
+                            <view>请叫我Steven</view>
+                            <view class="user_cell_time">暂无简介</view>
+                            <!-- 关注 -->
+                            <view class='aboutHim'>
+                                <block wx:if="{{followState == true}}">
+                                    <view class='follow' data-index='{{index}}' catchtap='allState'>
+                                        <image src='../../../../images/icon/plus.png' />
+                                        <text>关注</text>
+                                    </view>
+                                </block>
+                                <block wx:else>
+                                    <view class='onFollow'>
+                                        <image src='../../../../images/icon/choice.png' />
+                                        <text>已关注</text>
+                                    </view>
+                                </block>
+                            </view>
+                        </view>
+                    </view>
+                </block>
+            </view>
+        </swiper-item>
+    </swiper>
+</view>

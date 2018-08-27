@@ -1,0 +1,42 @@
+.followDetails_view, swiper{
+    width: 100%;
+    height: 100%;
+    margin-top: 85rpx;
+}
+.followTabs{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    border-bottom: 1rpx solid #ccc;
+    background: #fff;
+}
+.interval{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+.interval::after{
+    content: '';
+    display: block;
+    width: 30%;
+    border-top: 5rpx solid #E07B17;
+    margin: 0 auto;
+}
+
+.followTabs text{
+    display: block;
+    width: 50%;
+    height: 80rpx;
+    line-height: 80rpx;
+    box-sizing: border-box;
+    text-align: center;
+}
+.followTabs text:first-child{
+    border-right: 1rpx solid #ccc;
+}

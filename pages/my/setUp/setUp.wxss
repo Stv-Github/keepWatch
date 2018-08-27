@@ -1,1 +1,4 @@
-/* pages/my/setUp/setUp.wxss */
+
+.weui-cell__bd{
+    height: auto;
+}

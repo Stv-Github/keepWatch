@@ -1,33 +1,32 @@
 <view class='person_view'>
-  <view class='per_header'>
-    <view class='per_img'>
-      <image src='../../images/icon/portrait1.png' />
-    </view>
-    <view>请叫我Steven</view>
-    <view class='per_headerText'>0 关注 | 100 粉丝</view>
-    <view class='per_headerText'>简介：暂无简介</view>
-  </view>
-  <view class="page__bd">
-    <view class="weui-grids">
-      <block wx:for="{{grids}}" wx:for-item="gridsItems">
-        <!-- {{750 / (grids.length) }} -->
-        <navigator url="" class="weui-grid" hover-class="weui-grid_active">
-          <image class="weui-grid__icon" src="{{gridsItems.grids_icon}}" />
-          <view class="weui-grid__label">{{gridsItems.grids_title}}</view>
-        </navigator>
-      </block>
-    </view>
-  </view>
-  <view>
-    <view wx:for='{{tabList}}' wx:for-item='tabItem' class="{{index === 2 || index === 4 ? 'borderBottom' : ''}}">
-      <view class='per_listItem' data-tabTitle='{{tabItem.tabTitle}}' bindtap='GoCommenDetail'>
-        <image src='{{tabItem.tabIcon}}' />
-        <view class='per_itemRight'>
-          <text>{{tabItem.tabTitle}}</text>
-          <image src='../../images/icon/move_right.png'></image>
+    <view class='per_header'>
+        <view class='per_img'>
+            <image src='../../images/icon/portrait1.png' />
         </view>
-      </view>
+        <view>请叫我Steven</view>
+        <view class='per_headerText' bindtap='GoFollowDetails'>0 关注 | 100 粉丝</view>
+        <view class='per_headerText'>简介：暂无简介</view>
     </view>
-  </view>
+    <view class="page__bd">
+        <view class="weui-grids">
+            <block wx:for="{{grids}}" wx:for-item="gridsItems">
+                <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+                    <image class="weui-grid__icon" src="{{gridsItems.grids_icon}}" />
+                    <view class="weui-grid__label">{{gridsItems.grids_title}}</view>
+                </navigator>
+            </block>
+        </view>
+    </view>
+    <view>
+        <view wx:for='{{tabList}}' wx:for-item='tabItem' class="{{index === 2 || index === 4 ? 'borderBottom' : ''}}">
+            <view class='per_listItem' data-tabTitle='{{tabItem.tabTitle}}' bindtap='GoCommonDetail'>
+                <image src='{{tabItem.tabIcon}}' />
+                <view class='per_itemRight'>
+                    <text>{{tabItem.tabTitle}}</text>
+                    <image src='../../images/icon/move_right.png'></image>
+                </view>
+            </view>
+        </view>
+    </view>
 </view>
 <view class='footer-view'></view>

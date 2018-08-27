@@ -60,18 +60,18 @@
 .per_listItem:after{
   position: absolute;
   content: '';
-  width: 630rpx;
-  left: 120rpx;
+  width: 640rpx;
+  left: 110rpx;
   bottom: 0;
   right: 0;
   border-top: 1rpx solid #ddd;
 }
 .per_listItem > image{
-  width: 60rpx;
-  height: 60rpx;
+  width: 50rpx;
+  height: 50rpx;
 }
 .per_itemRight{
-  width: 610rpx;
+  width: 620rpx;
   display: flex;
   justify-content: space-between;
   align-items: center;
