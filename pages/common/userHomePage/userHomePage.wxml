@@ -1,2 +1,25 @@
-<!--pages/common/userHomePage/userHomePage.wxml-->
-<text>pages/common/userHomePage/userHomePage.wxml</text>
+<view class='borderBottom'>
+    <view class='per_header'>
+        <view class='per_img' bindtap='GoUserHome'>
+            <image src='../../../images/icon/portrait.png' />
+        </view>
+        <view>
+            <view class='per_userName'>请叫我Steven</view>
+            <view class='per_headerText'>简介：暂无简介</view>
+        </view>
+    </view>
+    <view class='tabText'>
+        <view>
+            <text>454</text>
+            <text class='per_Text'>关注</text>
+        </view>
+        <view>
+            <text>45.4k</text>
+            <text class='per_Text'>粉丝</text>
+        </view>
+        <view>
+            <text>454</text>
+            <text class='per_Text'>关注</text>
+        </view>
+    </view>
+</view>

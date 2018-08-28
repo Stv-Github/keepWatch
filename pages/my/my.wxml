@@ -1,6 +1,6 @@
 <view class='person_view'>
     <view class='per_header'>
-        <view class='per_img'>
+        <view class='per_img' bindtap='GoUserHome'>
             <image src='../../images/icon/portrait1.png' />
         </view>
         <view>请叫我Steven</view>

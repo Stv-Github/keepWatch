@@ -25,10 +25,14 @@
         <view class='broadcastIcon'>
             <image src='../../images/icon/broadcast.png'></image>
         </view>
-        <view class='broadcastContent'>
-            <text>Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing </text>
-            <image src='../../images/timg.jpg'></image>
-        </view>
+        <swiper class='broadcastContent' autoplay='true' vertical='true' circular='true' interval='3000'>
+            <block wx:for="{{msgList}}">
+                <swiper-item class='swiper_item'>
+                    <text>{{item.title}}</text>
+                    <image src='../../images/timg.jpg'></image>
+                </swiper-item>
+            </block>
+        </swiper>
     </view>
 
     <!-- 热门话题 -->

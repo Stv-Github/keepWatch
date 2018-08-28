@@ -39,6 +39,11 @@ Page({
             { titleText: '前行', iconBgColor: '#62A160', iconSrc:'../../images/icon/icon.png'},
             { titleText: '渴盼', iconBgColor: '#57B6D4', iconSrc:'../../images/icon/icon.png'},
             { titleText: '陪伴', iconBgColor: '#627EC4', iconSrc:'../../images/icon/icon.png'},
+        ],
+        msgList: [
+            { url: "url", title: "多地首套房贷利率上浮 热点城市渐迎零折扣时代" },
+            { url: "url", title: "悦如公寓三周年生日趴邀你免费吃喝欢唱" },
+            { url: "url", title: "你想和一群有志青年一起过生日嘛？" }
         ]
     },
 

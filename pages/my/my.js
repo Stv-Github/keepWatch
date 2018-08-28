@@ -94,6 +94,13 @@ Page({
         })
     },
 
+    // 用户主页
+    GoUserHome: function(){
+        wx.navigateTo({
+            url: '../common/userHomePage/userHomePage'
+        })
+    },
+
     /**
      * 生命周期函数--监听页面加载
      */
