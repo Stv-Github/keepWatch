@@ -14,6 +14,13 @@ Page({
         txtPadding:10
     },
 
+    // 用户主页
+    GoUserHome: function () {
+        wx.navigateTo({
+            url: '../../common/userHomePage/userHomePage'
+        })
+    },
+
     // 关注收藏状态
     allState: function(){
         this.setData({

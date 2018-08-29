@@ -37,8 +37,8 @@ Page({
             { titleText: '离歌', iconBgColor: '#94DB88', iconSrc:'../../images/icon/icon.png'},
             { titleText: '相守', iconBgColor: '#E6C573', iconSrc:'../../images/icon/icon.png'},
             { titleText: '前行', iconBgColor: '#62A160', iconSrc:'../../images/icon/icon.png'},
-            { titleText: '渴盼', iconBgColor: '#57B6D4', iconSrc:'../../images/icon/icon.png'},
-            { titleText: '陪伴', iconBgColor: '#627EC4', iconSrc:'../../images/icon/icon.png'},
+            // { titleText: '渴盼', iconBgColor: '#57B6D4', iconSrc:'../../images/icon/icon.png'},
+            // { titleText: '陪伴', iconBgColor: '#627EC4', iconSrc:'../../images/icon/icon.png'}
         ],
         msgList: [
             { url: "url", title: "多地首套房贷利率上浮 热点城市渐迎零折扣时代" },
@@ -51,6 +51,12 @@ Page({
     GoHotTopicList: function(){
         wx.navigateTo({
             url: './hotTopicList/hotTopicList',
+        })
+    },
+    // 帖子详情
+    GoTopicDetails: function () {
+        wx.navigateTo({
+            url: 'topicDetails/topicDetails'
         })
     },
 

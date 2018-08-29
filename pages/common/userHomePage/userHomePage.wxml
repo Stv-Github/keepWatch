@@ -1,25 +1,84 @@
-<view class='borderBottom'>
-    <view class='per_header'>
-        <view class='per_img' bindtap='GoUserHome'>
-            <image src='../../../images/icon/portrait.png' />
+<view>
+    <view class='borderBottom'>
+        <view class='per_header'>
+            <view class='per_img'>
+                <image src='../../../images/icon/portrait.png' />
+            </view>
+            <view>
+                <view class='per_userName'>请叫我Steven</view>
+                <view class='per_headerText'>简介：暂无简介</view>
+            </view>
         </view>
-        <view>
-            <view class='per_userName'>请叫我Steven</view>
-            <view class='per_headerText'>简介：暂无简介</view>
+        <view class='tabText'>
+            <view>
+                <text>454</text>
+                <text class='per_Text'>关注</text>
+            </view>
+            <view>
+                <text>45.4k</text>
+                <text class='per_Text'>粉丝</text>
+            </view>
+            <view>
+                <text>4542</text>
+                <text class='per_Text'>收到的赞</text>
+            </view>
         </view>
     </view>
-    <view class='tabText'>
-        <view>
-            <text>454</text>
-            <text class='per_Text'>关注</text>
+    <view class='allPostList'>
+        <view class='allPostList_title'>
+            全部帖子
         </view>
         <view>
-            <text>45.4k</text>
-            <text class='per_Text'>粉丝</text>
-        </view>
-        <view>
-            <text>454</text>
-            <text class='per_Text'>关注</text>
+            <block wx:for='{{[1,1,1]}}'>
+                <view class="page__bd" bindtap='GoTopicDetails'>
+                    <view class="weui-article">
+                        <view class="user_information">
+                            <view class="user_cell_hd">
+                                <image src="../../../images/icon/portrait1.png" />
+                            </view>
+                            <view class="user_cell_bd">
+                                <view>请叫我Steven</view>
+                                <view class="user_cell_time">昨天09:41</view>
+                                <view class='user_cell_icon' catchtap='showActionSheet'>
+                                    <image src='../../../images/icon/move.png'></image>
+                                </view>
+                            </view>
+                        </view>
+                        <view class="weui-article__section">
+                            <view class="weui-article__title">我是标题</view>
+                            <view>
+                                <view class="weui-article__p">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, consequat.
+                                </view>
+                                <view class='imgList'>
+                                    <block wx:for='{{imgList}}' wx:for-item='imgItemSrc'>
+                                        <image class="weui-article__img" src="{{imgItemSrc}}" mode="aspectFill" lazy-load  catchtap='imgYuLan' data-src='{{imgItemSrc}}' data-list='{{imgList}}'/>
+                                    </block>
+                                    <view wx:if='{{imgList.length > 3}}' class='itemImgMask' catchtap='imgYuLan' data-src='{{imgList[2]}}' data-list='{{imgList}}'>+{{imgList.length - 3}}</view>
+                                </view>
+                            </view>
+                            <view class='allTopicsFooter'>
+                                <view class='visualData'>
+                                    <view>
+                                        <image src='../../../images/icon/watch.png'></image>
+                                        <text>2.3k</text>
+                                    </view>
+                                    <view>
+                                        <image src='../../../images/icon/comment.png'></image>
+                                        <text>1.3k</text>
+                                    </view>
+                                    <view>
+                                        <image src='../../../images/icon/collect.png'></image>
+                                        <text>3573</text>
+                                    </view>
+                                </view>
+                                <text>北京</text>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </block>
         </view>
     </view>
 </view>
+<view class='footer-view'></view>

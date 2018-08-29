@@ -8,10 +8,34 @@ Page({
 
     },
 
+    // 用户主页
+    GoUserHome: function () {
+        wx.navigateTo({
+            url: '../../common/userHomePage/userHomePage'
+        })
+    },
+
     // 话题详情
     GoTopicDetails:function(){
         wx.navigateTo({
             url: '../topicDetails/topicDetails'
+        })
+    },
+    // 操作菜单
+    showActionSheet: function () {
+        wx.showActionSheet({
+            itemList: [
+                '关注',
+                '分享',
+                '收藏',
+                '举报'
+            ],
+            success: res => {
+                console.log(res);
+            },
+            fail: err => {
+                console.log(err);
+            }
         })
     },
 

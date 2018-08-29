@@ -19,7 +19,7 @@
             <block wx:for='{{[1,1,1,1,1,1]}}'>
                 <view class='comment_item'>
                     <view class="user_information">
-                        <view class="user_cell_hd">
+                        <view class="user_cell_hd" bindtap='GoUserHome'>
                             <image src="../../../images/icon/portrait1.png" />
                         </view>
                         <view class="user_cell_bd">

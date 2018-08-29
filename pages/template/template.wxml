@@ -3,13 +3,13 @@
     <view class="page__bd" bindtap='GoTopicDetails'>
         <view class="weui-article">
             <view class="user_information">
-                <view class="user_cell_hd">
+                <view class="user_cell_hd" catchtap='GoUserHome'>
                     <image src="../../../images/icon/portrait1.png" />
                 </view>
                 <view class="user_cell_bd">
                     <view>请叫我Steven</view>
                     <view class="user_cell_time">昨天09:41</view>
-                    <view class='user_cell_icon'>
+                    <view class='user_cell_icon' catchtap='showActionSheet'>
                         <image src='../../../images/icon/move.png'></image>
                     </view>
                 </view>
@@ -51,7 +51,7 @@
     <view class="page__bd" style='border-bottom: 20rpx solid #f5f5f5;'>
         <view class="weui-article">
             <view class="user_information user_info_border">
-                <view class="user_cell_hd">
+                <view class="user_cell_hd" bindtap='GoUserHome'>
                     <image src="../../../images/icon/portrait1.png" />
                 </view>
                 <view class="user_cell_bd">

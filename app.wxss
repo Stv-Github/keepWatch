@@ -75,7 +75,8 @@ page{
     justify-content: space-between;
     padding: 0 20rpx;
     height: 80rpx;
-    border-bottom:1rpx dashed #999;
+    /* border-bottom:1rpx dashed #999; */
+    border-bottom:1rpx dashed #ccc;
 }
 .allTopicsUser{
     display: flex;
@@ -128,7 +129,7 @@ page{
     line-height: 40rpx;
 }
 .allTopicsFooter{
-    margin-top: 20rpx;
+    margin-top: 30rpx;
 }
 .visualData{
     display: flex;
