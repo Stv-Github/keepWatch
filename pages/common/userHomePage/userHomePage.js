@@ -1,4 +1,5 @@
-// pages/common/userHomePage/userHomePage.js
+var common = require('../../../common.js');
+
 Page({
 
     /**
@@ -22,12 +23,8 @@ Page({
     },
 
     // 图片预览
-    imgYuLan: function(e) {
-        console.log(e);
-        wx.previewImage({
-            current: e.currentTarget.dataset.src,
-            urls: e.currentTarget.dataset.list
-        })
+    imgYuLan: function (e) {
+        common.perviewPictures(e);
     },
 
     // 操作菜单

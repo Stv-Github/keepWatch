@@ -1,3 +1,5 @@
+
+
 .weui-article {
     padding: 0rpx;
     border-top: 20rpx solid #f5f5f5;
@@ -34,7 +36,7 @@
 }
 
 
-/* 详情关注与收藏 */
+/* 详情关注 */
 .aboutHim {
     position: absolute;
     top: 8rpx;

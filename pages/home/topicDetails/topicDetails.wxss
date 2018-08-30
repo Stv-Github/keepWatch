@@ -1,3 +1,19 @@
+button{
+    background: rgba(255,255,255,0);
+    background-color: transparent;
+    line-height: normal;
+    border: 0;
+    border-radius: 0;
+}
+button::after{
+    border: 0;
+    border-radius: 0;
+}
+button.button-hover{
+    background-color: transparent;
+}
+
+
 /* 评论 */
 .comHeader-view{
     display: flex;

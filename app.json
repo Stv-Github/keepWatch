@@ -53,5 +53,8 @@
                 "selectedIconPath": "images/icon/t-personSelect.png"
             }
         ]
+    },
+    "networkTimeout":{
+        "request": 30000
     }
 }

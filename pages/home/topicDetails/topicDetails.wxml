@@ -1,7 +1,7 @@
 <!-- 话题详情 -->
 <import src='../../template/template' />
 <view>
-    <template is='detailsTem' data='{{...item}}'></template>
+    <template is='detailsTem' data='{{...hotTopDetails}}'></template>
 
     <!-- 评论、转发、点赞 -->
     <view class='comment-view'>

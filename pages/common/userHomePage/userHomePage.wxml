@@ -50,7 +50,7 @@
                                 <view class="weui-article__p">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, consequat.
                                 </view>
-                                <view class='imgList'>
+                                <view class='ArticleImgList'>
                                     <block wx:for='{{imgList}}' wx:for-item='imgItemSrc'>
                                         <image class="weui-article__img" src="{{imgItemSrc}}" mode="aspectFill" lazy-load  catchtap='imgYuLan' data-src='{{imgItemSrc}}' data-list='{{imgList}}'/>
                                     </block>

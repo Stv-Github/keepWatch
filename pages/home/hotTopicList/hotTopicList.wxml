@@ -1,7 +1,5 @@
 <!-- 热门话题 -->
 <import src='../../template/template' />
 <view>
-    <block wx:for="{{[1,1,1,1,1,1]}}">
-        <template is='hotTopItemTem' data=''></template>    
-    </block>
+    <template is='hotTopItemTem' data='{{hotTopList}}'></template>
 </view>

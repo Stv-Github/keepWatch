@@ -1,4 +1,6 @@
-<view class='person_view'>
+<import src='../template/template' />
+
+<view class='person_view' wx:if='{{userInfoState}}'>
     <view class='per_header'>
         <view class='per_img' bindtap='GoUserHome'>
             <image src='../../images/icon/portrait1.png' />
@@ -28,5 +30,7 @@
             </view>
         </view>
     </view>
+    <view class='footer-view'></view>
 </view>
-<view class='footer-view'></view>
+<!-- 微信授权 -->
+<template is='userInfo' wx:if='{{!userInfoState}}'></template>

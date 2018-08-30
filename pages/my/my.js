@@ -1,10 +1,17 @@
-// pages/my/my.js
+var app = getApp();
+
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
+        userInfoState: false, // 默认未授权
+        userInfo: {
+            avatarUrl: '',  //用户头像
+            nickName: '',   //用户昵称
+            gender: 0   //用户性别      1-男  2-女  0-未知
+        },
         grids: [{
                 grids_id: '1',
                 grids_title: '签到',
@@ -58,8 +65,42 @@ Page({
         ]
     },
 
+    // 生命周期函数--监听页面加载
+    onLoad: function(options) {
+
+    },
+    // 生命周期函数--监听页面显示
+    onShow: function () {
+        console.log(app)
+        if (app.globalData.userInfo) {
+            console.log('授权成功，已获得用户信息');
+            this.setData({
+                userInfoState: true
+            })
+        } else {
+            console.log('未获得用户信息');
+        }
+    },
+
+    // 授权登录
+    loginInfo: function () {
+        let that = this;
+        wx.getUserInfo({
+            success: res => {
+                console.log(res);
+                app.globalData.userInfo = res.userInfo;
+                console.log(app)
+                that.setData({
+                    userInfoState: true
+                })
+            },
+            fail: err => {
+                console.log('获取用户信息失败！')
+            }
+        })
+    },
     // 邀请有礼、常见问题 ....
-    GoCommonDetail: function(e) {
+    GoCommonDetail: function (e) {
         if (e.currentTarget.dataset.tabtitle == '邀请有礼') {
             wx.navigateTo({
                 url: './invite/invite?tabtitle=' + e.currentTarget.dataset.tabtitle
@@ -86,41 +127,20 @@ Page({
             })
         }
     },
-
     // 关注、粉丝
-    GoFollowDetails: function(){
+    GoFollowDetails: function () {
         wx.navigateTo({
             url: './common/followDetails/followDetails'
         })
     },
-
     // 用户主页
-    GoUserHome: function(){
+    GoUserHome: function () {
         wx.navigateTo({
             url: '../common/userHomePage/userHomePage'
         })
     },
 
-    /**
-     * 生命周期函数--监听页面加载
-     */
-    onLoad: function(options) {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面初次渲染完成
-     */
-    onReady: function() {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面显示
-     */
-    onShow: function() {
-
-    },
+    
 
     /**
      * 生命周期函数--监听页面隐藏
