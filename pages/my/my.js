@@ -75,7 +75,10 @@ Page({
         if (app.globalData.userInfo) {
             console.log('授权成功，已获得用户信息');
             this.setData({
-                userInfoState: true
+                userInfoState: true,
+                'userInfo.avatarUrl': app.globalData.userInfo.avatarUrl,
+                'userInfo.nickName': app.globalData.userInfo.nickName,
+                'userInfo.gender': app.globalData.userInfo.gender
             })
         } else {
             console.log('未获得用户信息');
