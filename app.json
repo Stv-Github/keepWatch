@@ -1,11 +1,17 @@
 {
     "pages": [
-        
+        "pages/issue/issue",
         "pages/home/home",
         "pages/home/hotTopicList/hotTopicList",
         "pages/home/topicDetails/topicDetails",
+        "pages/home/classifyList/classifyList",
+
         "pages/elderly/elderly",
+
+        
+
         "pages/children/children",
+
         "pages/my/my",
         "pages/my/common/followDetails/followDetails",
         "pages/my/invite/invite",
@@ -13,6 +19,7 @@
         "pages/my/feedback/feedback",
         "pages/my/aboutUs/aboutUs",
         "pages/my/setUp/setUp",
+
         "pages/common/userHomePage/userHomePage",
         "pages/startPage/startPage",
         "pages/template/template"
@@ -24,7 +31,7 @@
     },
     "tabBar":{
         "color":"#444",
-        "selectedColor":"#D4237A",
+        "selectedColor":"#F54248",
         "borderStyle":"white",
         "backgroundColor":"#F8F8F8",
         "list":[
@@ -39,6 +46,12 @@
                 "text":"聆听老人",
                 "iconPath":"./images/icon/t-elderly.png",
                 "selectedIconPath":"images/icon/t-elderlySelect.png"
+            },
+            {
+                "pagePath": "pages/issue/issue",
+                "text":"发布",
+                "iconPath":"./images/icon/t-issue.png",
+                "selectedIconPath":"images/icon/t-issue.png"
             },
             {
                 "pagePath": "pages/children/children",

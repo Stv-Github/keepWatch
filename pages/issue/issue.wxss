@@ -1,0 +1,65 @@
+.issue_View{
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+    background: #f5f5f5;
+}
+.issue_Header{
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15rpx 20rpx;
+    background: #fff;
+    box-sizing: border-box;
+    border-bottom: 1rpx solid #eee;
+    z-index: 10;
+    margin-bottom: 20rpx;
+}
+.issue_Header view{
+    display: flex;
+    align-items: center;
+}
+.issue_Header image{
+    width: 45rpx;
+    height: 45rpx;
+    margin-top: 10rpx;
+    margin-right: 10rpx;
+}
+.issue_Content{
+    padding: 20rpx;
+}
+.issue_Main > view{
+    margin-bottom: 40rpx;
+}
+.issue_Main{
+    display: flex;
+    flex-direction: column;
+}
+.issue_Title{
+    line-height: 70rpx;
+    padding-left: 15rpx;   
+}
+.issue_Main input, .issue_Textarea, .issue_Uploader{
+    padding: 15rpx 20rpx;
+    background: #fff;
+}
+.issue_Textarea, .issue_Uploader{
+    width: 710rpx;
+    border-radius: 8rpx;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.issue_Textarea textarea{
+    width: 100%;
+    height: 400rpx;
+    box-sizing: border-box;
+}
+
+.weui-uploader__img{
+    width: 225rpx;
+    height: 225rpx;
+}

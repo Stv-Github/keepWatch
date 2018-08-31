@@ -52,9 +52,9 @@
                                 </view>
                                 <view class='ArticleImgList'>
                                     <block wx:for='{{imgList}}' wx:for-item='imgItemSrc'>
-                                        <image class="weui-article__img" src="{{imgItemSrc}}" mode="aspectFill" lazy-load  catchtap='imgYuLan' data-src='{{imgItemSrc}}' data-list='{{imgList}}'/>
+                                        <image class="weui-article__img" src="{{imgItemSrc}}" mode="aspectFill" lazy-load  catchtap='previewImage' data-src='{{imgItemSrc}}' data-list='{{imgList}}'/>
                                     </block>
-                                    <view wx:if='{{imgList.length > 3}}' class='itemImgMask' catchtap='imgYuLan' data-src='{{imgList[2]}}' data-list='{{imgList}}'>+{{imgList.length - 3}}</view>
+                                    <view wx:if='{{imgList.length > 3}}' class='itemImgMask' catchtap='previewImage' data-src='{{imgList[2]}}' data-list='{{imgList}}'>+{{imgList.length - 3}}</view>
                                 </view>
                             </view>
                             <view class='allTopicsFooter'>

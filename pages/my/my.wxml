@@ -5,7 +5,7 @@
         <view class='per_img' bindtap='GoUserHome'>
             <image src='{{userInfo.avatarUrl}}' />
         </view>
-        <view>{{userInfo.avatarUrl}}</view>
+        <view>{{userInfo.nickName}}</view>
         <view class='per_headerText' bindtap='GoFollowDetails'>0 关注 | 100 粉丝</view>
         <view class='per_headerText'>简介：暂无简介</view>
     </view>

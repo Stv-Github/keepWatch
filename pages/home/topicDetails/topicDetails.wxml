@@ -27,8 +27,8 @@
                             <view class="user_cell_time">昨天09:41</view>
                             <view class='user_cell_icon user_icon'>
                                 <image src='../../../images/icon/zan.png'></image>
-                                <text decode='{{true}}' space='{{true}}'> 365 &nbsp;&nbsp;&nbsp;</text>
-                                <image class='pinglun' src='../../../images/icon/pinglun.png'></image>
+                                <text decode='{{true}}' space='{{true}}'>&nbsp;365</text>
+                                <!-- <image class='pinglun' src='../../../images/icon/pinglun.png'></image> -->
                             </view>
                         </view>
                     </view>
@@ -38,7 +38,7 @@
                             如果你无法简洁的表达你的想法，那只说明你还不够了解它。 -- 阿尔伯特·爱因斯坦
                         </view>
                         <!-- 回复区域 -->
-                        <view class='recovery_area'>
+                        <!-- <view class='recovery_area'>
                             <view class='reply_item' space='ensp'>
                                 <text class='user_name'>Like</text> 回复
                                 <text class='user_name'>请叫我Steven</text> :
@@ -49,7 +49,7 @@
                                 <text class='user_name'>Like</text> :
                                 <text> \n</text> 如果你无法简洁的表达你的想法，那只说明你还不够了解它。 -- 阿尔伯特·爱因斯坦
                             </view>
-                        </view>
+                        </view> -->
                     </view>
                 </view>
             </block>

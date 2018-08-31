@@ -28,9 +28,9 @@
                         <view class="weui-article__p">{{hotTopItem.ArticleContent}}</view>
                         <view class='ArticleImgList'>
                             <block wx:for='{{hotTopItem.ArticleImgList}}' wx:for-item='imgItemSrc'>
-                                <image class="weui-article__img" src="{{imgItemSrc}}" mode="aspectFill" lazy-load catchtap='imgYuLan' data-src='{{imgItemSrc}}' data-list='{{hotTopItem.ArticleImgList}}' />
+                                <image class="weui-article__img" src="{{imgItemSrc}}" mode="aspectFill" lazy-load catchtap='previewImage' data-src='{{imgItemSrc}}' data-list='{{hotTopItem.ArticleImgList}}' />
                             </block>
-                            <view wx:if='{{hotTopItem.ArticleImgList.length > 3}}' class='itemImgMask' catchtap='imgYuLan' data-src='{{hotTopItem.ArticleImgList[2]}}' data-list='{{hotTopItem.ArticleImgList}}'>+{{hotTopItem.ArticleImgList.length - 3}}</view>
+                            <view wx:if='{{hotTopItem.ArticleImgList.length > 3}}' class='itemImgMask' catchtap='previewImage' data-src='{{hotTopItem.ArticleImgList[2]}}' data-list='{{hotTopItem.ArticleImgList}}'>+{{hotTopItem.ArticleImgList.length - 3}}</view>
                         </view>
                     </view>
                     <view class='allTopicsFooter'>
@@ -96,7 +96,7 @@
                     <view class="weui-article__p">{{ArticleContent}}</view>
                     <view class='ArticleImgShowAll'>
                         <block wx:for='{{ArticleImgList}}' wx:for-item='imgItemSrc'>
-                            <image class="weui-article__img" src="{{imgItemSrc}}" mode="aspectFill" lazy-load catchtap='imgYuLan' data-src='{{imgItemSrc}}' data-list='{{ArticleImgList}}' />
+                            <image class="weui-article__img" src="{{imgItemSrc}}" mode="aspectFill" lazy-load catchtap='previewImage' data-src='{{imgItemSrc}}' data-list='{{ArticleImgList}}' />
                         </block>
                     </view>
                 </view>

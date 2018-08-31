@@ -31,14 +31,14 @@ Page({
             }
         ],
         classifyArr: [
-            { titleText: '最初', iconBgColor: '#DB72AB', iconSrc:'../../images/icon/icon.png'},
-            { titleText: '成长', iconBgColor: '#F55B64', iconSrc:'../../images/icon/icon.png'},
-            { titleText: '燃火', iconBgColor: '#AA7DE3', iconSrc:'../../images/icon/icon.png'},
-            { titleText: '离歌', iconBgColor: '#94DB88', iconSrc:'../../images/icon/icon.png'},
-            { titleText: '相守', iconBgColor: '#E6C573', iconSrc:'../../images/icon/icon.png'},
-            { titleText: '前行', iconBgColor: '#62A160', iconSrc:'../../images/icon/icon.png'},
-            { titleText: '渴盼', iconBgColor: '#57B6D4', iconSrc:'../../images/icon/icon.png'},
-            { titleText: '陪伴', iconBgColor: '#627EC4', iconSrc:'../../images/icon/icon.png'}
+            { classifyId: 1, titleText: '最初', iconBgColor: '#DB72AB', iconSrc:'../../images/icon/icon.png'},
+            { classifyId: 2, titleText: '成长', iconBgColor: '#F55B64', iconSrc:'../../images/icon/icon.png'},
+            { classifyId: 3, titleText: '燃火', iconBgColor: '#AA7DE3', iconSrc:'../../images/icon/icon.png'},
+            { classifyId: 4, titleText: '离歌', iconBgColor: '#94DB88', iconSrc:'../../images/icon/icon.png'},
+            { classifyId: 5, titleText: '相守', iconBgColor: '#E6C573', iconSrc:'../../images/icon/icon.png'},
+            { classifyId: 6, titleText: '前行', iconBgColor: '#62A160', iconSrc:'../../images/icon/icon.png'},
+            { classifyId: 7, titleText: '渴盼', iconBgColor: '#57B6D4', iconSrc:'../../images/icon/icon.png'},
+            { classifyId: 8, titleText: '陪伴', iconBgColor: '#627EC4', iconSrc:'../../images/icon/icon.png'}
         ],
         msgList: [
             { url: "url", title: "多地首套房贷利率上浮 热点城市渐迎零折扣时代" },
@@ -47,6 +47,15 @@ Page({
         ]
     },
 
+
+    // 分类列表
+    GoClassifyList: function(e){
+        console.log(e);
+        wx.navigateTo({
+            // url: './navigate'+ e.currentTarget.dataset.classifyid +'/navigate'+ e.currentTarget.dataset.classifyid
+            url: './classifyList/classifyList?titleText=' + e.currentTarget.dataset.titleText
+        })
+    },
     // 查看全部热门话题
     GoHotTopicList: function(){
         wx.navigateTo({

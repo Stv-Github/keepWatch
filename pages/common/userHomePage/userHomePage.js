@@ -23,7 +23,7 @@ Page({
     },
 
     // 图片预览
-    imgYuLan: function (e) {
+    previewImage: function (e) {
         common.perviewPictures(e);
     },
 

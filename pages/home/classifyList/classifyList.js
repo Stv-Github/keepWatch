@@ -33,8 +33,23 @@ Page({
                 homeCity: '北京'   //家乡城市或所在的城市
             }
         ]
-        
+
     },
+
+    // 生命周期函数--监听页面加载
+    onLoad: function (options) {
+        if (options) {
+            wx.setNavigationBarTitle({
+                title: options.titleText
+            })
+        }
+    },
+    // 生命周期函数--监听页面显示
+    onShow: function () {
+
+    },
+
+
 
     // 用户主页
     GoUserHome: function () {
@@ -42,9 +57,8 @@ Page({
             url: '../../common/userHomePage/userHomePage'
         })
     },
-
     // 话题详情
-    GoTopicDetails:function(){
+    GoTopicDetails: function () {
         wx.navigateTo({
             url: '../topicDetails/topicDetails'
         })
@@ -60,7 +74,7 @@ Page({
             ],
             success: res => {
                 console.log(res);
-                if(app.globalData.userInfo){
+                if (app.globalData.userInfo) {
                     wx.getUserInfo({
                         success: res => {
                             console.log(res);
@@ -69,7 +83,7 @@ Page({
                             console.log(err);
                         }
                     })
-                }else{
+                } else {
                     console.log('用户未授权')
                 }
             },
@@ -84,58 +98,37 @@ Page({
     },
 
     /**
-     * 生命周期函数--监听页面加载
-     */
-    onLoad: function(options) {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面初次渲染完成
-     */
-    onReady: function() {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面显示
-     */
-    onShow: function() {
-
-    },
-
-    /**
      * 生命周期函数--监听页面隐藏
      */
-    onHide: function() {
+    onHide: function () {
 
     },
 
     /**
      * 生命周期函数--监听页面卸载
      */
-    onUnload: function() {
+    onUnload: function () {
 
     },
 
     /**
      * 页面相关事件处理函数--监听用户下拉动作
      */
-    onPullDownRefresh: function() {
+    onPullDownRefresh: function () {
 
     },
 
     /**
      * 页面上拉触底事件的处理函数
      */
-    onReachBottom: function() {
+    onReachBottom: function () {
 
     },
 
     /**
      * 用户点击右上角分享
      */
-    onShareAppMessage: function() {
+    onShareAppMessage: function () {
 
     }
 })

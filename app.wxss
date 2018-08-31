@@ -1,10 +1,14 @@
 @import './dist/style/weui.wxss';
 @import "./pages/template/template.wxss";
 
+
 page{
     height: 100%;
     font-size: 28rpx;
     color: #101010;
+}
+button{
+    margin: 0;
 }
 
 .footer-view{
